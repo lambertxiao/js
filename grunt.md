@@ -2,13 +2,9 @@
 
 ![grunt](https://img.shields.io/badge/js-grunt-brightgreen.svg)
 
----
-
 ### 简介
     
 Grunt是一个基于NodeJS，可用于自动化构建、测试、生成文档的项目管理工具。
-
----
 
 ### Grunt 能做什么
 
