@@ -11,12 +11,12 @@ define(['routes', 'services/dependencyResolverFor'], function (config, dependenc
     '$provide',
     function ($routeProvider, $locationProvider, $controllerProvider, $compileProvider, $filterProvider, $provide) {
       app.controller = $controllerProvider.register;
-      app.directive  = $compileProvider.directive;
-      app.filter     = $filterProvider.register;
-      app.factory    = $provide.factory;
-      app.service    = $provide.service;
+      app.directive = $compileProvider.directive;
+      app.filter = $filterProvider.register;
+      app.factory = $provide.factory;
+      app.service = $provide.service;
 
-      $locationProvider.html5Mode(true);
+      // $locationProvider.html5Mode(true);
 
       if (config && config.routes) {
         for (path in config.routes) {
@@ -28,7 +28,7 @@ define(['routes', 'services/dependencyResolverFor'], function (config, dependenc
           })
         }
       }
-  }])
+    }])
 
   return app
 })
